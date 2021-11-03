@@ -1,4 +1,5 @@
 .header {
+    width: 100vw;
     background-image: linear-gradient(0, #f63, #f53d2d);
 }
 
