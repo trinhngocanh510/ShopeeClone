@@ -859,7 +859,7 @@
 .status-box {
     position: relative;
     display: inline-flex;
-    width: 20rem;
+    width: 30%;
     height: 100%;
     background-color: var(--white-color);
     margin: 0 0 0 1rem;
