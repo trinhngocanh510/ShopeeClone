@@ -123,7 +123,11 @@ html {
     }
     
     .sortbar__option {
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+
+    .sortbar__option--item {
+        margin: 0;
     }
 
     .product {
