@@ -90,8 +90,8 @@ html {
         width: 100%;
     }
 
-    .ss-grid__column-3 {
-        width: 25%;
+    .ss-grid__column-4 {
+        width: calc(100% /3);
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
@@ -119,22 +119,32 @@ html {
 
     .sortbar {
         position: relative; 
-        top: 7rem;
+        top: 6rem;
     }
-
+    
     .sortbar__option {
-        
+        justify-content: space-between;
     }
-
-   
 
     .product {
         position: relative;
-        top: 120px;
+        top: 6.5rem;
     }
 
     .footer__national {
         flex-direction: column;
+    }
+
+    .company__policy {
+        display: contents;
+    }
+
+    .company__policy--item {
+        margin-bottom: 5px;
+    }
+
+    .company__policy--item + .company__policy--item {
+        border: none;
     }
 }
 
