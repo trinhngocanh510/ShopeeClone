@@ -84,7 +84,7 @@ html {
 @media (max-width: 768px) {
     .responsive-mobile {
         display: block;
-        font-size: 50px;
+        font-size: 7vw;
         text-align: center;
         height: 100vh;
         line-height: 100vh;
