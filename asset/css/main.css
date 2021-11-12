@@ -890,6 +890,7 @@
 
 .shop-category--item:hover {
     color: #ee4d2d;
+    cursor: pointer;
 }
 
 /* Sort bar */
@@ -1277,22 +1278,28 @@
 
 .footer__app--download {
     display: inline-flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-left: 15px;
+}
+
+.footer__app--qrcode {
+    width: 40%;
+    height: 40%;
+    border: 1rem solid rgba(0,0,0,.09);
+    margin-right: 15px;
 }
 
 .footer__app--link {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
-    width: 80px;
-    height: 84px;
+    width: 100%;
 }
 
-.footer__app--qrcode {
-    width: 120px;
-    height: 120px;
-    border: 1.7rem solid rgba(0,0,0,.09);
-    margin-right: 15px;
+.footer__app--link-icon {
+    
+    
+    height: 30%;
 }
 
 .footer__national {
@@ -1351,8 +1358,4 @@
 
 .company-registed {
     font-weight: 600;
-}
-
-.responsive-mobile {
-    display: none;
 }

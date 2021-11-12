@@ -202,8 +202,8 @@
                             </div> -->
                             <!-- Cart Login -->
                             <div class="usermode navsearch__cart--login navbar__subnav">
-                                <div class="navsearch__cart--header">Sản phẩm mới thêm</div>
-                                <div class="navsearch__cart--body">
+                                <div class="navsearch__cart--header hide-on-mobile">Sản phẩm mới thêm</div>
+                                <div class="navsearch__cart--body hide-on-mobile">
                                     <a class="navsearch__cart--item" href="https://shopee.vn/-M%C3%A3-1010FASHIONSALE1-gi%E1%BA%A3m-10k-%C4%91%C6%A1n-t%E1%BB%AB-50k-Gi%C3%A0y-th%E1%BB%83-thao-n%E1%BB%AF-m%C3%A3-5555-r%C3%A1ch-i.4980129.4656566862">
                                         <div class="navsearch__cart--image navsearch__cart--image-1"> </div>
                                         <div class="navsearch__cart--name">[Mã 1010FASHIONSALE1 giảm 10k đơn từ 50k] Giày thể thao nữ mã 5555 rách</div>
@@ -220,7 +220,7 @@
                                         <div class="navsearch__cart--price">₫92.000</div>
                                     </div>
                                 </div>
-                                <div class="navsearch__cart--footer">
+                                <div class="navsearch__cart--footer hide-on-mobile">
                                     <div class="navsearch__cart--footer-btn">Xem giỏ hàng</div>
                                 </div>
                             </div>
@@ -232,7 +232,8 @@
                 </div>
             </div>
         </div>
-
+        
+        <!-- Header sortbar mobile -->
         <ul class="header__sortbar">
             <li class="header__sortbar--item">
                 <a href="" class="header__sortbar--link header__sortbar--active">Liên quan</a>
@@ -248,12 +249,14 @@
             </li>
         </ul>
 
+
+
         <!-- Main -->
         <div class="app">
             <div class="grid">
                 <div class="app-sell grid__row">
-                    <div class="sidepage-filter grid__column-2 m-grid__column-2 s-grid__full-width hide-on-mobile">
-                        <div class="seller-info s-grid__column-3">
+                    <div class="sidepage-filter grid__column-2 m-grid__column-2 s-grid__full-width ss-grid__full-width">
+                        <div class="seller-info s-grid__column-3 hide-on-mobile">
                             <div class="seller-info__avatar"></div>
                             <div class="seller-infor__details">
                                 <h3 class="seller-infor__name">Trinh Ngoc Anh</h3>
@@ -265,11 +268,11 @@
                         <div class="shop-category s-grid__column-9">
                             <h3 class="shop-category--header hide-on-mobile">Danh mục shop</h3>
                             <div class="shop-category--main">
-                                <div class="shop-category--title">
+                                <div class="shop-category--title hide-on-mobile">
                                     <i class="fas fa-list-ul shop-category--icon"></i>
                                     <h4 >Sản phẩm</h4>
                                 </div>
-                                <ul class="shop-category--list">
+                                <ul class="shop-category--list ss-grid__full-width">
                                     <li class="shop-category--item">Giày thể thao & sneaker</li>
                                     <li class="shop-category--item">Giày nam</li>
                                     <li class="shop-category--item">Giày nữ</li>
@@ -624,7 +627,7 @@
                         </div>
 
                         <!-- Page Controller -->
-                        <div class="page-controller">
+                        <div class="grid__row page-controller">
                             <div class="page-controller--pre page-controller--button">
                                 <i class="fas fa-chevron-left"></i>
                             </div>
@@ -695,19 +698,19 @@
                         </ul>
                     </div>
                     <div class="grid__column-3 ss-grid__column-6">
-                        <div class="footer__app--title">TẢI ỨNG DỤNG SHOPEE NGAY THÔI</div>
+                        <div class="footer__app--title">TẢI ỨNG DỤNG SHOPEE</div>
                         <div class="footer__app--download">
                             <img src="./asset/image/QRcodeShopee.png" alt="Qr-Download" class="footer__app--qrcode">
                             <div class="footer__app--link">
-                                <img src="./asset/image/ios.png" alt="IOS">
-                                <img src="./asset/image/android.png" alt="Android">
-                                <img src="./asset/image/appgallery.png" alt="Appgallery">
+                                <a href="#" style="background-image: url(./asset/image/ios.png); background-repeat: no-repeat; background-size: contain;" alt="IOS" class="footer__app--link-icon"></a>
+                                <a href="#" style="background-image: url(./asset/image/android.png); background-repeat: no-repeat; background-size: contain;" alt="Android" class="footer__app--link-icon"></a>
+                                <a href="#" style="background-image: url(./asset/image/appgallery.png); background-repeat: no-repeat; background-size: contain;" alt="Appgallery" class="footer__app--link-icon"></a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="grid__grow">
-                    <div class="footer__national ">
+                    <div class="footer__national">
                         <div class="copyright grid__column-4 s-grid__full-width ss-grid__full-width" style="justify-content: center;">© 2021 Shopee. Tất cả các quyền được bảo lưu.</div>
                         <ul class="national-area--list grid__column-8 s-grid__full-width ss-grid__full-width">
                             <div>Quốc gia & Khu vực:</div>
