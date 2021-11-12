@@ -216,6 +216,10 @@ html {
         color: #ee4d2d;
     }
 
+    .navsearch__history {
+        width: 100%;
+    }
+
     .footer__national {
         flex-direction: column;
     }
