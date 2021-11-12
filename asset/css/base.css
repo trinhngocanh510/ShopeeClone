@@ -107,20 +107,103 @@ html {
         display: none;
     }
 
+    .navsearch {
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    @keyframes mobileSearchSlipDown {
+        from {
+            top: 35px;;
+            opacity: 1;
+        }
+        to {
+            top: 70px;;
+            opacity: 1;
+        }
+    }
+
+    .navsearch__with-search {
+        display: none;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        box-shadow: 0 1px 2px rgb(0 0 0 / 5%);
+        z-index: 2;
+        animation: mobileSearchSlipDown ease-in-out 0.2s;
+    }
+
+    #mobile-search-checkbox:checked ~ .navsearch__with-search {
+        display: flex;
+    }
+
+    .navsearch__search-m {
+        display: block;
+    }
+
+    .navsearch__search-m:focus .navsearch__with-search {
+        display: flex;
+    }
+
+    .navsearch__search-m--icon {
+        font-size: 25px;
+        color: #fff;
+        cursor: pointer;
+    }
+
     .navsearch__logo {
         padding: 0 15px;
         margin-top: -5px;
     }
-    
-    .sortbar__option {
-        justify-content: space-around;
-    }
 
-    .sortbar__option--item {
+    .navsearch__cart--block {
         margin: 0;
     }
 
+    .header__sortbar {
+       display: flex;
+       position: sticky;
+       top: 0;
+       width: 100%;
+       left: 0;
+       right: 0;
+       padding-left: 0;
+       background-color: #fff;
+       margin: 0;
+       height: 42px;
+       z-index: 1;
+       border-top: 1px solid #e5e5e5;
+       border-bottom: 1px solid #e5e5e5;
+    }
     
+    .header__sortbar--item {
+        flex: 1;
+        list-style-type: none;
+        text-align: center;
+        position: relative;
+    }
+
+    .header__sortbar--item::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        height: 60%;
+        border-left: 1px solid #e5e5e5;
+        transform: translateY(-50%);
+    }
+
+    .header__sortbar--link {
+        text-decoration: none;
+        color: black;
+        font-size: 1.4rem;
+        line-height: 4.2rem;
+        height: 100%;
+    }
+    
+    .header__sortbar--active {
+        color: #ee4d2d;
+    }
 
     .footer__national {
         flex-direction: column;

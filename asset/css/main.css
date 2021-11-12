@@ -1,5 +1,5 @@
 .header {
-    width: 100vw;
+    width: 100%;
     background-image: linear-gradient(0, #f63, #f53d2d);
 }
 
@@ -408,6 +408,10 @@
     justify-content: flex-start;
 }
 
+.navsearch__search-m {
+    display: none;
+}
+
 .navsearch__logo {
     font-size: 2.8rem;
     color: var(--white-color);
@@ -443,18 +447,18 @@
     border-radius: 2px;
     box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 9%); 
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .navsearch__searchbar--main {
     padding-left: 1rem;
     display: flex;
-    flex: 1;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .navsearch__searchbar--input {
-    width: calc(100% - 62px);
+    width: 100%;
     height: 3.4rem;
     outline: none;
     border: none;
@@ -462,18 +466,77 @@
     opacity: 0.8;
     
 }
+.navsearch__history {
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 26%);
+}
 
+.wtosearch {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.wtosearch__option {
+    display: flex;
+    font-size: 14px;
+    padding: 0 10px 0 15px;
+    border-left: 1px solid rgba(0,0,0,.09);
+    white-space: nowrap;
+    height: 75%;
+    align-items: center;
+    color: rgba(0,0,0,.87);
+}
+
+.wtosearch__option--label {
+    margin: 0;
+    display: inline-block;
+}
+
+.wtosearch__option--icon {
+    margin-left: 15px;
+}
+
+.wtosearch--list {
+    z-index: 2;
+    position: absolute;
+    top: 4.2rem;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 15rem;
+    width: 100%;    
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%);
+    display: none;
+}
+
+.wtosearch--item {
+    display: inline-flex;
+    padding: 0 10px 0 15px;
+    height: 45px;
+    font-size: 14px;
+    white-space: nowrap;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+/* .wtosearch:hover .wtosearch--list {
+   display: block;
+} */
+
+.wtosearch--selected {
+    margin-left: 15px;
+    color: #ee4d2d;
+}
 
 
 .navsearch__searchbar--searchbtn {
-    position: absolute;
     font-size: 14px;
     border: none;
     padding: 0 24px;
     background-color: #fb5533;
     color: var(--white-color);
-    right: 0;
-    margin-right: 3px;
     height: 34px;
 }
 
@@ -483,7 +546,9 @@
 }
 
 .navsearch__history {
-    width: 90%;
+    position: absolute;
+    top: 4.5rem;
+    width: 70%;
     background-color: var(--white-color);
     z-index: 1;
     display: none;
@@ -494,7 +559,7 @@
 
 .navsearch__history--content {
     background-color: var(--white-color);
-    margin-top: 8px;
+    
     border-radius: 2px;
 }
 
@@ -704,6 +769,11 @@
     border-radius: 2px;
     line-height: 3.4rem;
     cursor: pointer;
+}
+
+/* Sortbar Mobile */
+.header__sortbar {
+    display: none;
 }
 
 /* Sell */

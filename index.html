@@ -137,17 +137,24 @@
                 </div>
                 <!-- Nav search -->
                 <div class="navsearch">
+                    <div class="navsearch__search-m">
+                        <label for="mobile-search-checkbox">
+                            <i class="fas fa-search navsearch__search-m--icon"></i>
+                        </label>
+                    </div>
+
+                    <input type="checkbox" hidden id="mobile-search-checkbox">
+
                     <div class="navsearch__logo">
                         <a href="https://shopee.vn/">
                             <i class="fa-brands fa-shopify navsearch__logo--icon"></i>
-                            <div class="navsearch__logo--name hide-on-tablet hide-on-mobile">Shopee</div>
+                            <div class="navsearch__logo--name hide-on-tablet">Shopee</div>
                         </a>
                     </div>
                     <div class="navsearch__with-search">
                         <div class="navsearch__searchbar">
                             <form action="" class="navsearch__searchbar--main">
-                                <input type="text" class="navsearch__searchbar--input" placeholder="Siêu sale thương hiệu">
-                                <button class="navsearch__searchbar--searchbtn"><i class="fas fa-search"></i></button>
+                                <input type="text" class="navsearch__searchbar--input" placeholder="Siêu sale thương hiệu"> 
                                 <div class="navsearch__history">
                                     <div class="navsearch__history--content">
                                         <a href="https://shopee.vn/m/1010" class="navsearch__history--prefill">
@@ -156,10 +163,20 @@
                                         </a>
                                         <a href="https://shopee.vn/search?keyword=tai%20nghe" class="navsearch__history--text">tai nghe</a>
                                     </div>
-                                </div>
+                                </div> 
                             </form>
-
-                            
+                            <div class="wtosearch navbar--button">
+                                <div class="wtosearch__option">
+                                    <p class="wtosearch__option--label">Trong Shop này</p>
+                                    <i class="fas fa-angle-down wtosearch__option--icon"></i>
+                                </div>
+                                
+                                <ul class="wtosearch--list navbar__subnav">
+                                    <li class="wtosearch--item">Trong Shop này <i class="fas fa-check wtosearch--selected"></i></li>
+                                    <li class="wtosearch--item">Trong Shopee</li>
+                                </ul>
+                            </div>
+                            <button class="navsearch__searchbar--searchbtn"><i class="fas fa-search"></i></button>
                         </div>
                         <div class="navsearch__recommend hide-on-tablet hide-on-mobile">
                             <a href="" class="navsearch__recommend--button">Áo khoác</a>
@@ -208,14 +225,25 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- <div class="navsearch__your-cart navbar__subnav"> -->
-                            
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <ul class="header__sortbar">
+            <li class="header__sortbar--item">
+                <a href="" class="header__sortbar--link header__sortbar--active">Liên quan</a>
+            </li>
+            <li class="header__sortbar--item">
+                <a href="" class="header__sortbar--link">Mới nhất</a>
+            </li>
+            <li class="header__sortbar--item">
+                <a href="" class="header__sortbar--link">Bán chạy</a>
+            </li>
+            <li class="header__sortbar--item">
+                <a href="" class="header__sortbar--link">Giá</a>
+            </li>
+        </ul>
 
         <!-- Main -->
         <div class="app">
@@ -252,8 +280,8 @@
                     </div>
                     <div class=".grid__row grid__column-10 m-grid__column-8 s-grid__full-width ss-grid__full-width">
                         <!-- Sort bar -->
-                        <div class="sortbar ss-grid__full-width">
-                            <p class="sortbar--label hide-on-mobile">Sắp xếp theo</p>
+                        <div class="sortbar ss-grid__full-width hide-on-mobile">
+                            <p class="sortbar--label">Sắp xếp theo</p>
                             <div class="sortbar__option">
                                 <p class="sortbar__option--item sortbar__option--selected">Phổ biến</p>
                                 <p class="sortbar__option--item">Mới nhất</p>
@@ -599,8 +627,8 @@
                             </div>
                             <div class="page-controller--number page-controller--current page-controller--button">1</div>
                             <div class="page-controller--number page-controller--button">2</div>
-                            <div class="page-controller--number page-controller--button hide-on-mobile">3</div>
-                            <div class="page-controller--number page-controller--button hide-on-mobile">4</div>
+                            <div class="page-controller--number page-controller--button">3</div>
+                            <div class="page-controller--number page-controller--button">4</div>
                             <div class="page-controller--dot page-controller--button">...</div>
                             <div class="page-controller--number page-controller--button">9</div>
                             <div class="page-controller--next page-controller--button">
