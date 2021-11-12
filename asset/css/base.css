@@ -160,6 +160,17 @@ html {
         margin: 0;
     }
 
+    .navsearch__cart {
+
+    }
+
+    .user-mobile {
+        display: block;
+        font-size: 2rem;
+        margin-left: 0.5rem;
+        color: #fff;
+    }
+
     .header__sortbar {
        display: flex;
        position: sticky;

@@ -771,6 +771,10 @@
     cursor: pointer;
 }
 
+.user-mobile {
+    display: none;
+}
+
 /* Sortbar Mobile */
 .header__sortbar {
     display: none;
@@ -803,8 +807,9 @@
     width: 60%;
     padding-top: 60%;
     display: block;
-    background-image: url(https://scontent.fhan5-8.fna.fbcdn.net/v/t1.6435-9/87243653_185067102777078_2426814280683749376_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=XINukI0R6ToAX_lwd8x&_nc_ht=scontent.fhan5-8.fna&oh=ceafdf9fae32695d5e2c9bd2118295d2&oe=618965B1);
-    background-size: cover;
+    background-image: url(https://pbs.twimg.com/profile_images/920970975403036672/hcoBedrl.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-color: var(--white-color);
     border-radius: 50%;
     border: 0.5rem solid #fff;
